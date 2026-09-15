@@ -1,10 +1,7 @@
 library(Seurat)
-library(SeuratObject)
 library(dplyr)
-library(patchwork)
+library(tidyr)
 library(data.table)
-library(tidyverse)
-library(readxl)
 
 DefaultAssay(mergedDat) <- "RNA"
 mergedDat <- NormalizeData(mergedDat, normalization.method = "LogNormalize",scale.factor = 1e6)
