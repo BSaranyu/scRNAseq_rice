@@ -2,6 +2,8 @@ library(Seurat)
 library(harmony)
 library(patchwork)
 
+rn1.singlet <- readRDS(file = "normal_RN1_singlet.rds")
+rd2.singlet <- readRDS(file = "drought_RD2_singlet.rds")
 mergedDat <- merge(rn1.singlet, y = rd2.singlet, project = "Rice Leaf", merge.data = TRUE)
 names(mergedDat@meta.data)[names(mergedDat@meta.data) == "orig.ident"] <- "conditions"
 
