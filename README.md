@@ -34,9 +34,9 @@ This repository contains reproducible workflows and pipelines for the quality co
 
 ## Acknowledgments
 Parts of the methodology implemented in this repository were utilized in research presented at:
-* **International Competition on Science, Technology, Engineering, and Mathematics (ICSTEM 2025), Malaysia** (Awarded Double Gold Medal and Special Award from the Indonesian Invention and Innovation Promotion Association(INNOPA)).
-* **The 6th National Rice Research Conference (2025), Thailand** (Oral Presentation: Evaluation of Marker-Based Cell Identity Index in plant single-cell analysis).
-* **The Graduate Innovation and Exhibition: National and International (GIENI 2026), Thailand** (Awarded Gold Medal).
+* **International Competition on Science, Technology, Engineering, and Mathematics (ICSTEM 2025), Malaysia**
+* **The 6th National Rice Research Conference (2025), Thailand**
+* **The Graduate Innovation and Exhibition: National and International (GIENI 2026), Thailand**
 
 ---
 **Author:** Saranyu Maensatit  
