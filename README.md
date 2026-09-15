@@ -1,5 +1,5 @@
 # Comparative Analysis of scRNA-Seq Data under Drought Stress Conditions
-This repository contains analysis pipeline for the quality control, integration, downstream analysis, and network construction of rice scRNA-seq datasets. The workflow demonstrates computational approaches to dissect cellular heterogeneity and gene regulatory mechanisms underlying the response of rice to drought stress.
+This repository contains an analysis pipeline for the quality control, integration, downstream analysis, and network construction of rice scRNA-seq datasets. The workflow demonstrates computational approaches to dissect cellular heterogeneity and gene regulatory mechanisms underlying the response of rice to drought stress.
 
 ## Key Capabilities & Workflows
 * **Data Quality Control:** Adaptive filtering of low-quality cells based on UMI counts, feature counts, and organellar (mitochondrial/chloroplast) gene expression thresholds.
