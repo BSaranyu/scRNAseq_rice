@@ -20,8 +20,8 @@ This repository contains reproducible workflows and pipelines for the quality co
 ```text
 ├── data/               
 ├── src/
-│   ├── 01_QC_and_Normalization.R    # Quality control and SCTransform workflows
-│   ├── 02_Data_Integration.R        # Data integration using Harmony
+│   ├── 01_QC.R                      # Quality control 
+│   ├── 02_Data_Integration.R        # Data integration and SCTransform workflows
 │   ├── 03_Cluster_Annotation.R      # Cell typing
 │   ├── 04_Condition_DE_Analysis.R   # Differential expression between normal vs. drought
 │   ├── 05_hdWGCNA_Analysis.R        # Co-expression network modeling
