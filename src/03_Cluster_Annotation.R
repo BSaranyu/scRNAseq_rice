@@ -3,6 +3,7 @@ library(dplyr)
 library(tidyr)
 library(data.table)
 
+mergedDat <- readRDS(file = "mergedDat.rds")
 DefaultAssay(mergedDat) <- "RNA"
 mergedDat <- NormalizeData(mergedDat, normalization.method = "LogNormalize",scale.factor = 1e6)
 mergedDat[["RNA"]] <- JoinLayers(mergedDat[["RNA"]])
