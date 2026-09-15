@@ -89,3 +89,6 @@ nExp.rd2.adj <- round(nExp.rd2*(1-homotypic.rd2)) # nExp = 934
 rd2.filtered <- doubletFinder(rd2.filtered, PCs = 1:50, pN = 0.25, pK = pK.rd2, nExp = nExp.rd2.adj, reuse.pANN = FALSE, sct = FALSE)
 names(rd2.filtered@meta.data)
 rd2.singlet <- subset(rd2.filtered, subset = DF.classifications_0.25_0.26_1251 == "Singlet")
+
+mergedDat <- merge(rn1.singlet, y = rd2.singlet, project = "Rice Leaf", merge.data = TRUE)
+names(mergedDat@meta.data)[names(mergedDat@meta.data) == "orig.ident"] <- "conditions"
