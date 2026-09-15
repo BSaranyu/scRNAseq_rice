@@ -25,7 +25,10 @@ This repository contains reproducible workflows and pipelines for the quality co
 │   ├── 03_Clustering_Annotation.R   # Cell typing
 │   ├── 04_Condition_DEG_Analysis.R  # Differential expression between normal vs. drought
 │   ├── 05_hdWGCNA_Analysis.R        # Co-expression network modeling
-│   └── 06_SCENIC_GRN_Inference.R    # Regulon activity analysis
+│   └── 06_SCENIC_GRN_Inference/     # GRN reconstruction & Regulon activity analysis
+|       ├── 01_run_GRNBoost2.bat
+|       ├── 02_run_RCISTarget.R
+|       └── 03_run_AUCell.R
 └── README.md
 ```
 
