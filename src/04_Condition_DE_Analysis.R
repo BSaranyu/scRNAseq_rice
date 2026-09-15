@@ -1,5 +1,5 @@
 library(Seurat)
-library(tidyverse)
+library(dplyr)
 library(clusterProfiler)
 library(biomaRt)
 library(AnnotationHub)
