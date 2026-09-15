@@ -2,7 +2,7 @@
 This repository contains reproducible workflows and pipelines for the quality control, integration, downstream analysis, and network construction of rice scRNA-seq datasets. The workflow demonstrates computational approaches to dissect cellular heterogeneity and gene regulatory mechanisms underlying the response of rice to drought stress.
 
 ## Key Capabilities & Workflows
-* **Data Quality Control & Preprocessing:** Adaptive filtering of low-quality cells based on UMI counts, feature counts, and organellar (mitochondrial/chloroplast) gene expression thresholds.
+* **Data Quality Control:** Adaptive filtering of low-quality cells based on UMI counts, feature counts, and organellar (mitochondrial/chloroplast) gene expression thresholds.
 * **Dataset Integration:** Implementation of integration algorithms (`McInnes et al., 2018`) to harmonize the normal and drought datasets by reducing unwanted sources of variation and facilitating the alignment of shared cell populations across conditions, while preserving biologically meaningful, cell type-specific transcriptional differences associated with drought stress.
 * **Cell-Type Annotation:** Cell types were annotated using MICI (`Wang et al., 2021`), followed by validation based on the expression patterns of literature-curated marker genes.
 * **Condition-Specific DEG Analysis (Normal vs. Drought):** Differential expression testing between experimental conditions within specific cell types using `FindMarkers` to identify stress-responsive genes and cell-type-specific transcriptional shifts.
