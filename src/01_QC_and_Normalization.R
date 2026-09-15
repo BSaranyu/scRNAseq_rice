@@ -7,12 +7,7 @@ library(ggplot2)
 library(data.table)
 library(tidyverse)
 library(readxl)
-#===============================================================================================
-#                                       Data processing
-#===============================================================================================
-## step 1 Data qualification
-# RN1
-# load the dataset and create seurat object
+
 rn1.cts <- Read10X_h5(filename = "filtered_feature_bc_matrix_rn1.h5")
 
 r_mt <- rownames(rn1.cts)
@@ -48,7 +43,6 @@ plot2 <- FeatureScatter(rn1.filtered, feature1 = "nCount_RNA", feature2 = "perce
 plot3 <- FeatureScatter(rn1.filtered, feature1 = "nCount_RNA", feature2 = "nFeature_RNA")
 plot1 + plot2 + plot3
 
-# Run standard workflow for doublet detection step
 rn1.filtered <- rn1.filtered %>% 
   NormalizeData() %>%
   FindVariableFeatures(selection.method = "vst", nfeatures = 2000) %>%
@@ -65,7 +59,6 @@ plotPC_n <- ElbowPlot(rn1.filtered, ndims = 100) + NoLegend() + ggtitle("Elbow P
   theme(plot.title = element_text(size = 16, face = "bold", hjust = 0.5))
 plotRN1 <- UMAPPlot(object = rn1.filtered, label=T) + ggtitle('RN1')
 
-# Run doublet finder
 sweep.res.rn1 <- paramSweep(rn1.filtered, PCs = 1:50, sct = FALSE)
 sweep.stat.rn1 <- summarizeSweep(sweep.res.rn1, GT = FALSE)
 bcmvn.rn1 <- find.pK(sweep.stat.rn1)
@@ -92,8 +85,6 @@ DimPlot(rn1.filtered, reduction = 'umap', group.by = 'DF.classifications_0.25_0.
 
 rn1.singlet <- subset(rn1.filtered, subset = DF.classifications_0.25_0.29_643 == "Singlet")
 
-# RD2
-# Load the dataset and create seurat object
 rd2.cts <- Read10X_h5(filename = "filtered_feature_bc_matrix_rd2.h5")
 
 r_mt <- rownames(rd2.cts)
@@ -127,7 +118,6 @@ plot2 <- FeatureScatter(rd2.filtered, feature1 = "nCount_RNA", feature2 = "perce
 plot3 <- FeatureScatter(rd2.filtered, feature1 = "nCount_RNA", feature2 = "nFeature_RNA")
 plot1 + plot2 + plot3
 
-# Run standard workflow for doublet detection step
 rd2.filtered <- rd2.filtered %>% 
   NormalizeData() %>%
   FindVariableFeatures(selection.method = "vst", nfeatures = 2000) %>%
@@ -143,7 +133,6 @@ plotPC2_n <- ElbowPlot(rd2.filtered, ndims = 100) + NoLegend() + ggtitle("Elbow 
   theme(plot.title = element_text(size = 16, face = "bold", hjust = 0.5))
 plotRD2 <- UMAPPlot(object = rd2.filtered, label=T) + ggtitle('RD2')
 
-# Run doublet finder
 sweep.res.rd2 <- paramSweep(rd2.filtered, PCs = 1:50, sct = FALSE)
 sweep.stat.rd2 <- summarizeSweep(sweep.res.rd2, GT = FALSE)
 bcmvn.rd2 <- find.pK(sweep.stat.rd2)
