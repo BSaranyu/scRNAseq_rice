@@ -14,7 +14,7 @@ This repository contains reproducible workflows and pipelines for the quality co
 
 ## Software and Computational Tools
 * **Languages:** R, Python
-* **Core Libraries:** Seurat, Bioconductor, Tidyverse, hdWGCNA, SCENIC
+* **Core Libraries:** Seurat, Bioconductor, hdWGCNA, DoubletFinder, Harmony, SCENIC, RcisTarget, AUCell, clusterProfiler
 
 ## Repository Structure
 ```text
