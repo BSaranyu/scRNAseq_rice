@@ -1,19 +1,10 @@
 library(dplyr)
 library(readr)
-library(tibble)
-library(ggplot2)
 library(data.table)
-library(tidyverse)
-library(rtracklayer)
-library(GenomicRanges)
+library(glue)
 library(org.Osativa.eg.db)
 library(biomaRt)
 library(RcisTarget)
-library(arrow)
-library(AUCell)
-library(BiocParallel)
-library(stats)
-library(glue)
 
 # Specify cell type and condition
 cell_type <- "mesophyll"
