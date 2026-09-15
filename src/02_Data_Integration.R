@@ -1,13 +1,6 @@
 library(Seurat)
-library(SeuratObject)
-library(dplyr)
-library(patchwork)
-library(DoubletFinder)
 library(harmony)
-library(ggplot2)
-library(data.table)
-library(tidyverse)
-library(readxl)
+library(patchwork)
 
 mergedDat <- merge(rn1.singlet, y = rd2.singlet, project = "Rice Leaf", merge.data = TRUE)
 names(mergedDat@meta.data)[names(mergedDat@meta.data) == "orig.ident"] <- "conditions"
