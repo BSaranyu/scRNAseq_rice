@@ -1,11 +1,6 @@
 library(Seurat)
-library(SeuratObject)
 library(dplyr)
-library(patchwork)
 library(DoubletFinder)
-library(ggplot2)
-library(data.table)
-library(tidyverse)
 library(readxl)
 
 rn1.cts <- Read10X_h5(filename = "filtered_feature_bc_matrix_rn1.h5")
