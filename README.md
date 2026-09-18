@@ -32,6 +32,9 @@ This repository contains an analysis pipeline for the quality control, integrati
 └── README.md
 ```
 
+## Acknowledgments
+The authors would like to express their sincere gratitude to their advisors and colleagues for their valuable suggestions and support throughout this research. S.M. and K.P. were supported by the 90th Anniversary of Chulalongkorn University Scholarship under the Ratchadapisek Somphot Endowment Fund. A.S. was supported with the research budget which was allocated by National Science, Research and Innovation Fund (NSRF), and King Mongkut’s University of Technology North Bangkok (Project no. KMUTNB-FF-69-B-18). This work was supported by the National Science Foundation Plant Genome Integrative Organismal Systems (IOS) Grant PGRP IOS-2055260 “RESEARCH-PGR: Mechanisms of haploid induction in potato” to LC and IMH.
+
 ## Research Presentations
 Parts of the methodology implemented in this repository were utilized in research presented at:
 * **International Competition on Science, Technology, Engineering, and Mathematics (ICSTEM 2025), Malaysia**
