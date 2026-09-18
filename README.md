@@ -39,5 +39,5 @@ Parts of the methodology implemented in this repository were utilized in researc
 * **The Graduate Innovation and Exhibition: National and International (GIENI 2026), Thailand**
 
 ---
-**Author:** Saranyu Maensatit  
-**Contact:** bksaranyu@gmail.com
+**Author:** Saranyu Maensatit et al.
+**Contact:**
