@@ -32,7 +32,7 @@ This repository contains an analysis pipeline for the quality control, integrati
 └── README.md
 ```
 
-## Acknowledgments
+## Research Presentations
 Parts of the methodology implemented in this repository were utilized in research presented at:
 * **International Competition on Science, Technology, Engineering, and Mathematics (ICSTEM 2025), Malaysia**
 * **The 6th National Rice Research Conference (2025), Thailand**
